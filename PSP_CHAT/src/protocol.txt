@@ -1,0 +1,36 @@
+Client & Server
+
+1. Client --> Server
+
+    * login / logoff
+    * status
+
+2. Server --> User
+
+    * online / offline
+
+3. Client --> Client
+
+    * direct messages
+    * broadcast messages / group messaging
+
+/****************************************************************/
+Open terminal
+execute next command
+
+telnet localhost 5555
+
+Commands for chat:
+
+    login <user> <password>
+    logoff
+
+    msg <user>  body....
+    guest: "msg jim Hello World" <-- sent
+    jim: "msg guest Hello World" <-- recv
+
+    #topic <-- chatroom / group chat
+    join #topic
+    leave #topic
+    send: msg #topic body...
+    recv: msg #topic:<login> body ...
